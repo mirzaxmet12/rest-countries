@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+body.dark {
+  --bg-color: #1b264b;
+  --bg-card-color: #263669;
+  --text-color: white;
+}
+body {
+  --bg-card-color: white;
+  --bg-color: #f3f6f4;
+  --text-color: black;
+}
+* {
+  color: var(--text-color);
+}
+a {
+  color: var(--text-color);
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input:focus{
+  outline: none;
+}
+
+
