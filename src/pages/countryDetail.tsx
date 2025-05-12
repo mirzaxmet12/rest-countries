@@ -34,11 +34,8 @@ function CountryDetail() {
     });
 
     const nativeName = country?.name.nativeName ?
-        Object.values(country.name.nativeName).at(-1)?.common :
+        Object.values(country.name.nativeName).slice(-1)[0]?.common :
         country?.name.common
-
-    console.log(nativeName);
-    console.log(borderCountries);
 
     return (
         <Box sx={{
